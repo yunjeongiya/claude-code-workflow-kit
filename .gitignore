@@ -1,0 +1,18 @@
+# Claude Code local settings (contains user-specific permissions)
+.claude/settings.local.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Dependencies (if you add any)
+node_modules/
