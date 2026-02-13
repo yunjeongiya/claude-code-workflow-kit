@@ -9,7 +9,11 @@
 > Track features, manage requirements, automate commits, and maintain project context across sessions.
 
 <p align="center">
-  <img src="docs/images/workflow-diagram.svg" alt="Workflow Diagram" width="800">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yunjeongiya/claude-code-workflow-kit/master/docs/images/workflow-diagram.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yunjeongiya/claude-code-workflow-kit/master/docs/images/workflow-diagram.svg">
+    <img alt="Workflow Diagram" src="https://raw.githubusercontent.com/yunjeongiya/claude-code-workflow-kit/master/docs/images/workflow-diagram.svg" width="800">
+  </picture>
 </p>
 
 ---
