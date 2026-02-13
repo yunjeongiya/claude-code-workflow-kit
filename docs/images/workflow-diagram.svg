@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#60a5fa;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34d399;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="400" y="45" text-anchor="middle" fill="#fff" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="bold">Claude Code Workflow Kit</text>
+  <text x="400" y="70" text-anchor="middle" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="14">Session continuity for AI-assisted development</text>
+
+  <!-- Main Flow Box -->
+  <rect x="50" y="100" width="700" height="120" rx="12" fill="#1e293b" filter="url(#shadow)"/>
+  <text x="400" y="125" text-anchor="middle" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" font-weight="600">WORKFLOW COMMANDS</text>
+
+  <!-- /resume -->
+  <rect x="80" y="140" width="120" height="60" rx="8" fill="url(#blueGrad)" filter="url(#shadow)"/>
+  <text x="140" y="165" text-anchor="middle" fill="#fff" font-family="monospace" font-size="16" font-weight="bold">/resume</text>
+  <text x="140" y="185" text-anchor="middle" fill="#dbeafe" font-family="system-ui, sans-serif" font-size="11">Load context</text>
+
+  <!-- Arrow 1 -->
+  <path d="M210 170 L260 170" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <defs><marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/></marker></defs>
+
+  <!-- Work -->
+  <rect x="270" y="140" width="120" height="60" rx="8" fill="url(#purpleGrad)" filter="url(#shadow)"/>
+  <text x="330" y="165" text-anchor="middle" fill="#fff" font-family="system-ui, sans-serif" font-size="16" font-weight="bold">Work</text>
+  <text x="330" y="185" text-anchor="middle" fill="#e9d5ff" font-family="system-ui, sans-serif" font-size="11">Claude Code</text>
+
+  <!-- Arrow 2 -->
+  <path d="M400 170 L450 170" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- /pause -->
+  <rect x="460" y="140" width="120" height="60" rx="8" fill="url(#orangeGrad)" filter="url(#shadow)"/>
+  <text x="520" y="165" text-anchor="middle" fill="#fff" font-family="monospace" font-size="16" font-weight="bold">/pause</text>
+  <text x="520" y="185" text-anchor="middle" fill="#fef3c7" font-family="system-ui, sans-serif" font-size="11">Save + WIP commit</text>
+
+  <!-- Arrow 3 -->
+  <path d="M590 170 L640 170" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- /finish -->
+  <rect x="650" y="140" width="120" height="60" rx="8" fill="url(#greenGrad)" filter="url(#shadow)"/>
+  <text x="710" y="165" text-anchor="middle" fill="#fff" font-family="monospace" font-size="16" font-weight="bold">/finish</text>
+  <text x="710" y="185" text-anchor="middle" fill="#d1fae5" font-family="system-ui, sans-serif" font-size="11">Complete feature</text>
+
+  <!-- Loop arrow from /pause back to /resume -->
+  <path d="M520 205 L520 235 L140 235 L140 205" stroke="#64748b" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+  <text x="330" y="252" text-anchor="middle" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Next session</text>
+
+  <!-- Features Section -->
+  <rect x="50" y="280" width="340" height="200" rx="12" fill="#1e293b" filter="url(#shadow)"/>
+  <text x="220" y="305" text-anchor="middle" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" font-weight="600">FEATURE TRACKING</text>
+
+  <!-- Feature cards -->
+  <rect x="70" y="320" width="140" height="70" rx="6" fill="#334155"/>
+  <text x="140" y="345" text-anchor="middle" fill="#a855f7" font-family="monospace" font-size="12" font-weight="bold">INDEX.md</text>
+  <text x="140" y="365" text-anchor="middle" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Quick lookup</text>
+  <text x="140" y="380" text-anchor="middle" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">next_feature_id</text>
+
+  <rect x="230" y="320" width="140" height="70" rx="6" fill="#334155"/>
+  <text x="300" y="345" text-anchor="middle" fill="#60a5fa" font-family="monospace" font-size="12" font-weight="bold">F001/README</text>
+  <text x="300" y="365" text-anchor="middle" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Feature docs</text>
+  <text x="300" y="380" text-anchor="middle" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">refs, status</text>
+
+  <!-- Status badges -->
+  <rect x="70" y="405" width="70" height="24" rx="4" fill="#3b82f6"/>
+  <text x="105" y="421" text-anchor="middle" fill="#fff" font-family="system-ui, sans-serif" font-size="10" font-weight="600">TODO</text>
+
+  <rect x="150" y="405" width="100" height="24" rx="4" fill="#a855f7"/>
+  <text x="200" y="421" text-anchor="middle" fill="#fff" font-family="system-ui, sans-serif" font-size="10" font-weight="600">IN_PROGRESS</text>
+
+  <rect x="260" y="405" width="70" height="24" rx="4" fill="#10b981"/>
+  <text x="295" y="421" text-anchor="middle" fill="#fff" font-family="system-ui, sans-serif" font-size="10" font-weight="600">DONE</text>
+
+  <!-- Arrows between statuses -->
+  <path d="M143 417 L147 417" stroke="#64748b" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M253 417 L257 417" stroke="#64748b" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Safety Hooks Section -->
+  <rect x="410" y="280" width="340" height="200" rx="12" fill="#1e293b" filter="url(#shadow)"/>
+  <text x="580" y="305" text-anchor="middle" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" font-weight="600">SAFETY HOOKS</text>
+
+  <!-- Blocked commands -->
+  <rect x="430" y="320" width="300" height="50" rx="6" fill="#450a0a"/>
+  <text x="580" y="340" text-anchor="middle" fill="#ef4444" font-family="system-ui, sans-serif" font-size="11" font-weight="600">BLOCKED</text>
+  <text x="580" y="358" text-anchor="middle" fill="#fca5a5" font-family="monospace" font-size="11">git commit -a  |  git add -A  |  git add .</text>
+
+  <!-- Safe commands -->
+  <rect x="430" y="380" width="300" height="50" rx="6" fill="#052e16"/>
+  <text x="580" y="400" text-anchor="middle" fill="#22c55e" font-family="system-ui, sans-serif" font-size="11" font-weight="600">SAFE</text>
+  <text x="580" y="418" text-anchor="middle" fill="#86efac" font-family="monospace" font-size="11">git add file1 file2 && git commit</text>
+
+  <!-- Hook icon -->
+  <rect x="430" y="440" width="140" height="30" rx="4" fill="#334155"/>
+  <text x="500" y="460" text-anchor="middle" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">PreToolUse Hook</text>
+
+  <rect x="590" y="440" width="140" height="30" rx="4" fill="#334155"/>
+  <text x="660" y="460" text-anchor="middle" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Feature Reminder</text>
+</svg>

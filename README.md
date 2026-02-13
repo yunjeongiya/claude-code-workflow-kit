@@ -8,11 +8,9 @@
 >
 > Track features, manage requirements, automate commits, and maintain project context across sessions.
 
-<!-- Add a workflow diagram image here for visual appeal
 <p align="center">
-  <img src="docs/images/workflow-diagram.png" alt="Workflow Diagram" width="600">
+  <img src="docs/images/workflow-diagram.svg" alt="Workflow Diagram" width="800">
 </p>
--->
 
 ---
 
