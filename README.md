@@ -8,13 +8,26 @@
 >
 > Track features, manage requirements, automate commits, and maintain project context across sessions.
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yunjeongiya/claude-code-workflow-kit/master/docs/images/workflow-diagram.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yunjeongiya/claude-code-workflow-kit/master/docs/images/workflow-diagram.svg">
-    <img alt="Workflow Diagram" src="https://raw.githubusercontent.com/yunjeongiya/claude-code-workflow-kit/master/docs/images/workflow-diagram.svg" width="800">
-  </picture>
-</p>
+```mermaid
+flowchart LR
+    subgraph Commands["⚡ Workflow Commands"]
+        A["/resume<br/>Load context"] --> B["💻 Work<br/>Claude Code"]
+        B --> C["/pause<br/>Save + WIP commit"]
+        C -.->|"Next session"| A
+        B --> D["/finish<br/>Complete feature"]
+    end
+
+    subgraph Features["📁 Feature Tracking"]
+        E["INDEX.md<br/>Quick lookup"] --> F["F001/README<br/>Feature docs"]
+        G["TODO"] --> H["IN_PROGRESS"] --> I["DONE"]
+    end
+
+    subgraph Safety["🛡️ Safety Hooks"]
+        J["❌ git commit -a"]
+        K["❌ git add -A"]
+        L["✅ git add file1 file2"]
+    end
+```
 
 ---
 
